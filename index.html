@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+	<script src='js/jquery_172.js'></script>
+	<script src='js/jquery_ui_1821.js'></script>
+	<script src='js/Touch_Punch.js'></script>
+	<title>Working Touch Punch</title>
+</head>
+<body>
+	<style>
+	#myElement 
+	{
+		position: absolute;
+		background: silver;
+		height: 100px;
+		width: 100px;
+		text-align: center;
+	}
+	</style>
+
+	<div id='content_writer'>
+		<div id="myElement" class='elemental'></div>
+	</div>
+	<script>
+	$(function() 
+	{
+		$(".elemental").draggable();
+	});
+	</script>
+</body>
+</html>
